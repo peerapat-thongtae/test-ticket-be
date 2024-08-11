@@ -1,3 +1,5 @@
+import { StatusEnum } from '../constraints/enum';
+
 export class Ticket {
   id: string; // uuid
 
@@ -6,6 +8,8 @@ export class Ticket {
   description: string;
 
   contact: string;
+
+  status: StatusEnum;
 
   created_at: Date;
 
